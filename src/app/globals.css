@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light dark;
+}
+
+html,
+body {
+  @apply bg-slate-950 text-white min-h-screen antialiased;
+}
+
+body {
+  @apply text-slate-100;
+}
+
+a {
+  @apply no-underline;
+}
+
+.glass {
+  @apply bg-slate-900/70 backdrop-blur-md border border-white/5 shadow-lg;
+}
+
+.grid-overlay {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
